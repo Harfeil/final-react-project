@@ -9,7 +9,7 @@ export default function Tasks() {
       description: "Capstone",
       assignee: "John",
       deadline: "10",
-      status: "Pending",
+      status: "Completed",
     },
     {
       description: "Chapter 1",
@@ -63,12 +63,6 @@ export default function Tasks() {
       description: "Chapter 9",
       assignee: "Lisa",
       deadline: "19",
-      status: "Completed",
-    },
-    {
-      description: "Chapter 10",
-      assignee: "Lisa",
-      deadline: "20",
       status: "Completed",
     },
   ];

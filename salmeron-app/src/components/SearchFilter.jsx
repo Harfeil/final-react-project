@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import "../styles/styles.css";
 
 export default function SearchFilter({ allTask, filter }) {
@@ -14,7 +13,7 @@ export default function SearchFilter({ allTask, filter }) {
     } else {
       if (Array.isArray(allTask)) {
         const filtered = allTask.filter((item) =>
-          (item.assignee || "").toLowerCase().includes(query.toLowerCase())
+          (item.description || "").toLowerCase().includes(query.toLowerCase())
         );
         filter(filtered);
       } else {
@@ -35,16 +34,3 @@ export default function SearchFilter({ allTask, filter }) {
     </>
   );
 }
-
-SearchFilter.propTypes = {
-  allTask: PropTypes.arrayOf(
-    PropTypes.shape({
-      description: PropTypes.string,
-    })
-  ),
-  filter: PropTypes.func.isRequired,
-};
-
-SearchFilter.defaultProps = {
-  allTask: [],
-};

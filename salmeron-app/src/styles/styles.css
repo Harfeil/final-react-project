@@ -63,7 +63,7 @@
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  height: 300px;
+  height: 400px;
 }
 .headers {
   font-weight: bold;
@@ -72,31 +72,12 @@
   margin-left: 100px;
   height: 35px;
   width: 200px;
-  background: hsla(239, 100%, 67%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(239, 100%, 67%, 1) 0%,
-    hsla(187, 100%, 89%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(239, 100%, 67%, 1) 0%,
-    hsla(187, 100%, 89%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(239, 100%, 67%, 1) 0%,
-    hsla(187, 100%, 89%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#595CFF", endColorstr="#C6F8FF", GradientType=1 );
+  background-color: black;
+  color: white;
   border: 1px solid white;
   border-radius: 10px;
   font-weight: 600;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .search-input {
   height: 35px;
@@ -108,4 +89,21 @@
 .search-container {
   margin-top: 20px;
   margin-left: 450px;
+}
+.id-display {
+  margin-left: 30px;
+}
+.description-display {
+  font-size: 40px;
+  margin-left: 120px;
+}
+.assignee-display,
+.deadline-display,
+.status-display {
+  margin-left: 40px;
+}
+.assignee,
+.deadline,
+.status {
+  font-weight: 300;
 }

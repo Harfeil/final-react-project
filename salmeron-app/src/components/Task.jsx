@@ -19,24 +19,25 @@ export default function Task({
   return (
     <>
       <div className="list-div">
-        <ul className="list-container">
-          <li>
-            <span className="headers">ID</span> : {index + 1}
-          </li>
-          <li>
-            <span className="headers">Description</span>: {description}
-          </li>
-          <li>
-            <span className="headers">Assignee</span>: {assignee}
-          </li>
-          <li>
-            <span className="headers">Deadline</span>:{" "}
-            {myStatus === "Completed" ? "" : deadline}
-          </li>
-          <li>
-            <span className="headers">Status</span>: {myStatus}
-          </li>
-        </ul>
+        <h3 className="id-display">ID: {index + 1}</h3>
+        <h2 className="description-display">{description}</h2>
+        <div>
+          <h3 className="assignee-display">
+            Assignee: <span className="assignee">{assignee}</span>
+          </h3>
+          <h3 className="deadline-display">
+            Deadline: <span className="deadline">{deadline}</span>
+          </h3>
+          <h3 className="status-display">
+            Status:{" "}
+            <span
+              className="status"
+              style={{ color: myStatus === "Pending" ? "Red" : "Green" }}
+            >
+              {myStatus}
+            </span>
+          </h3>
+        </div>
         <button className="toggleBtn" onClick={eventHandler}>
           Toggle Status
         </button>
