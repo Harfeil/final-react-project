@@ -29,7 +29,7 @@ export default function SearchFilter({ allTask, filter }) {
         type="text"
         value={searchQuery}
         onChange={searchInput}
-        placeholder="Search by Assignee"
+        placeholder="Search by Description"
       />
     </>
   );

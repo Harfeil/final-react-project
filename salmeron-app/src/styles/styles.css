@@ -38,10 +38,6 @@
 .title {
   color: Black;
 }
-.list-container {
-  list-style-type: none;
-  padding-left: -50px;
-}
 .task-list-container {
   overflow-y: auto;
   height: 700px;
